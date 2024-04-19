@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="Google Chrome"/>
+    <parameter name="url" value="https://www.google.com/"/>
+    <parameter name="Websiteurl" value="http://www.sparkstone.co.nz/sampleapp/101/index.php"/>
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/dell/IdeaProjects/TestNG/src/Tricentris_With_TestNG/Automobile.java">
+        <groups>
+            <run>
+                <include name="2Wheeler"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tricentris_With_TestNG.Automobile">
+                <methods>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/dell/IdeaProjects/TestNG/src/Tricentris_With_TestNG/Camper.java">
+        <classes>
+            <class name="Tricentris_With_TestNG.Camper">
+                <methods>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/dell/IdeaProjects/TestNG/src/Tricentris_With_TestNG/Motorcycle.java">
+        <classes>
+            <class name="Tricentris_With_TestNG.Motorcycle">
+                <methods>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/dell/IdeaProjects/TestNG/src/Tricentris_With_TestNG/Truck.java">
+        <classes>
+            <class name="Tricentris_With_TestNG.Truck">
+                <methods>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

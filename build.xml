@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <parameter name="browser" value="Google Chrome"/>
+    <parameter name="url" value="https://www.google.com/"/>
+    <parameter name="Websiteurl" value="http://www.sparkstone.co.nz/sampleapp/101/index.php"/>
+
+
+
+    <test  name="Automobile">
+        <groups>
+            <run>
+                <include name="4Wheeler"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tricentris_With_TestNG.Automobile">
+                <methods>
+                    <include name="OpenAutomobile"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Camper">
+        <classes>
+            <class name="Tricentris_With_TestNG.Camper">
+                <methods>
+                    <include name="OpenCamper"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Motercycle">
+        <classes>
+            <class name="Tricentris_With_TestNG.Motorcycle">
+                <methods>
+                    <include name="OpenMotercycle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Truck">
+        <classes>
+            <class name="Tricentris_With_TestNG.Truck">
+                <methods>
+                    <include name="OpenTruck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
